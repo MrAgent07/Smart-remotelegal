@@ -10,13 +10,13 @@ fi
 if git remote get-url origin &>/dev/null; then
   git push -u origin main
 else
-  gh repo create MrAgent07/beamremote-legal --public --source=. --remote=origin --push
+  gh repo create MrAgent07/Smart-remotelegal --public --source=. --remote=origin --push
 fi
 
 echo ""
-echo "Enable Pages: https://github.com/MrAgent07/beamremote-legal/settings/pages"
+echo "Enable Pages: https://github.com/MrAgent07/Smart-remotelegal/settings/pages"
 echo "  Branch: main  Folder: / (root)"
 echo ""
 echo "Live URLs (after 1–2 min):"
-echo "  https://mragent07.github.io/beamremote-legal/privacy.html"
-echo "  https://mragent07.github.io/beamremote-legal/support.html"
+echo "  https://mragent07.github.io/Smart-remotelegal/privacy.html"
+echo "  https://mragent07.github.io/Smart-remotelegal/support.html"
