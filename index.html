@@ -3,57 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beam Remote — premium universal TV remote for your home Wi‑Fi network.">
+  <meta name="theme-color" content="#07070a">
   <title>Beam Remote</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 520px;
-      margin: 3rem auto;
-      padding: 0 1.25rem;
-      text-align: center;
-      line-height: 1.5;
-      color: #111;
-      background: #fafafa;
-    }
-    @media (prefers-color-scheme: dark) {
-      body { color: #f5f5f5; background: #0d0d12; }
-      a { color: #6eb6ff; }
-      .card { background: #17171f; border-color: #2a2a35; }
-    }
-    h1 { font-size: 2rem; margin-bottom: 0.25rem; }
-    p { color: #555; }
-    @media (prefers-color-scheme: dark) { p { color: #aaa; } }
-    .card {
-      margin-top: 2rem;
-      padding: 1.25rem;
-      border: 1px solid #e5e5e5;
-      border-radius: 16px;
-      background: #fff;
-      text-align: left;
-    }
-    a {
-      display: block;
-      margin: 0.75rem 0;
-      color: #007aff;
-      font-size: 1.05rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover { text-decoration: underline; }
-    small { display: block; margin-top: 2rem; color: #888; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Beam Remote</h1>
-  <p>Premium universal TV remote for your home Wi‑Fi network.</p>
+  <div class="bg-mesh" aria-hidden="true"></div>
 
-  <div class="card">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="support.html">Support</a>
-    <a href="mailto:beamremote.support@gmail.com">beamremote.support@gmail.com</a>
-  </div>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm2 4v2h8V8H8zm0 4v2h2v-2H8zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></svg>
+        </span>
+        Beam Remote
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="index.html" class="active">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
 
-  <small>Bundle ID: com.beamremote.app · iOS 17+</small>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Beam Premium Remote</div>
+      <h1>Control every screen<br>from your iPhone</h1>
+      <p class="lead">
+        A premium universal TV remote for Roku, Google TV, Samsung, and LG — built for your home Wi‑Fi, with no accounts and no cloud relay.
+      </p>
+    </section>
+
+    <div class="summary-grid">
+      <article class="summary-item">
+        <div class="icon" aria-hidden="true">📡</div>
+        <h3>Local only</h3>
+        <p>Commands go directly from your phone to your TV on your network.</p>
+      </article>
+      <article class="summary-item">
+        <div class="icon" aria-hidden="true">🔒</div>
+        <h3>Private by design</h3>
+        <p>No analytics SDKs, no ads, and no data sold to third parties.</p>
+      </article>
+      <article class="summary-item">
+        <div class="icon" aria-hidden="true">✨</div>
+        <h3>Premium experience</h3>
+        <p>Glass UI, haptics, app shortcuts, and a full touchpad remote.</p>
+      </article>
+    </div>
+
+    <div class="link-grid">
+      <a class="link-tile glass-card" href="privacy.html">
+        <span class="tile-icon" aria-hidden="true">🛡</span>
+        <span class="tile-body">
+          <h3>Privacy Policy</h3>
+          <p>What we store on your device and what we never collect.</p>
+        </span>
+        <span class="chevron" aria-hidden="true">›</span>
+      </a>
+      <a class="link-tile glass-card" href="support.html">
+        <span class="tile-icon" aria-hidden="true">💬</span>
+        <span class="tile-body">
+          <h3>Support &amp; Setup</h3>
+          <p>Pairing guides, troubleshooting, and platform compatibility.</p>
+        </span>
+        <span class="chevron" aria-hidden="true">›</span>
+      </a>
+      <a class="link-tile glass-card" href="mailto:beamremote.support@gmail.com">
+        <span class="tile-icon" aria-hidden="true">✉️</span>
+        <span class="tile-body">
+          <h3>Email support</h3>
+          <p>beamremote.support@gmail.com</p>
+        </span>
+        <span class="chevron" aria-hidden="true">›</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:beamremote.support@gmail.com">Contact</a>
+    </div>
+    <p>Bundle ID com.beamremote.app · iOS 17+ · © Beam Remote</p>
+  </footer>
 </body>
 </html>

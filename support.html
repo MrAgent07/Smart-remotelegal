@@ -3,79 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beam Remote — Support</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 720px;
-      margin: 2rem auto;
-      padding: 0 1.25rem 3rem;
-      line-height: 1.65;
-      color: #1a1a1a;
-      background: #fff;
-    }
-    @media (prefers-color-scheme: dark) {
-      body { color: #eee; background: #0d0d12; }
-      a { color: #6eb6ff; }
-    }
-    h1 { font-size: 1.85rem; }
-    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
-    a { color: #007aff; }
-    li { margin-bottom: 0.45rem; }
-  </style>
+  <meta name="description" content="Beam Remote support — setup, pairing, troubleshooting, and platform compatibility.">
+  <meta name="theme-color" content="#07070a">
+  <title>Support — Beam Remote</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Beam Remote Support</h1>
-  <p>
-    Beam Remote controls TVs on your home Wi‑Fi. Your iPhone and TV must be on the
-    <strong>same network</strong> (not a guest or isolated VLAN).
-  </p>
+  <div class="bg-mesh" aria-hidden="true"></div>
 
-  <h2>Requirements</h2>
-  <ul>
-    <li>iPhone or iPad running <strong>iOS 17</strong> or later</li>
-    <li>TV and phone on the same Wi‑Fi network</li>
-    <li><strong>Local Network</strong> permission enabled for Beam Remote in iOS Settings</li>
-  </ul>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm2 4v2h8V8H8zm0 4v2h2v-2H8zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></svg>
+        </span>
+        Beam Remote
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html" class="active">Support</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Getting started</h2>
-  <ol>
-    <li>Install Beam Remote from the App Store.</li>
-    <li>Allow <strong>Local Network</strong> access when prompted.</li>
-    <li>Open the app and wait for your TV in the discovery list, or enter its IP manually.</li>
-    <li>For <strong>Google TV / Android TV</strong>, complete pairing with the code shown on your TV.</li>
-  </ol>
+  <main class="page">
+    <section class="hero" style="text-align:left;padding-bottom:1rem;">
+      <div class="eyebrow">Help center</div>
+      <h1 style="font-size:clamp(1.85rem,4vw,2.35rem);">Support</h1>
+      <p class="lead" style="margin:0;max-width:none;">
+        Beam Remote controls TVs on your home Wi‑Fi. Your iPhone and TV must be on the
+        <strong>same network</strong> — not a guest or isolated VLAN.
+      </p>
+    </section>
 
-  <h2>Supported platforms</h2>
-  <ul>
-    <li><strong>Roku / TCL Roku</strong> — Remote, keyboard, app launcher.</li>
-    <li><strong>Google TV / Android TV / TCL Google TV</strong> — Pairing, remote, featured app shortcuts, keyboard (focus a text field on the TV first).</li>
-    <li><strong>Samsung Smart TV</strong> — Pairing and remote (feature set varies by model).</li>
-    <li><strong>LG webOS</strong> — Pairing and remote (feature set varies by model).</li>
-  </ul>
+    <article class="glass-card content-card prose">
+      <div class="tip-box">
+        <strong>Quick tip:</strong> If discovery fails, disable VPN, confirm Local Network permission is on, and try <strong>Reconnect</strong> from the remote screen.
+      </div>
 
-  <h2>Troubleshooting</h2>
-  <ul>
-    <li>Confirm TV and phone are on the same Wi‑Fi (disable VPN while testing).</li>
-    <li>iOS Settings → Beam Remote → enable <strong>Local Network</strong>.</li>
-    <li>Use <strong>Reconnect</strong> on the remote screen or <strong>Forget TV</strong> in Settings, then pair again.</li>
-    <li><strong>Google TV:</strong> pairing uses port 6467; remote control uses port 6466. Both must be reachable on your LAN.</li>
-    <li><strong>Keyboard:</strong> focus a search or text field on the TV, dismiss the on-screen keyboard on the TV, then send text from the app.</li>
-    <li><strong>Apps tab:</strong> tap a shortcut to open Netflix, YouTube, etc. on Google TV (app must be installed on the TV).</li>
-  </ul>
+      <h2>Requirements</h2>
+      <ul>
+        <li>iPhone or iPad running <strong>iOS 17</strong> or later</li>
+        <li>TV and phone on the same Wi‑Fi network</li>
+        <li><strong>Local Network</strong> permission enabled for Beam Remote in iOS Settings</li>
+      </ul>
 
-  <h2>App Store listing</h2>
-  <p>
-    The app may appear as <strong>Beam Premium Remote</strong> on the App Store.
-    The name on your home screen is <strong>Beam Remote</strong>.
-  </p>
+      <h2>Getting started</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <span>Install Beam Remote from the App Store.</span>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <span>Allow <strong>Local Network</strong> access when prompted.</span>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <span>Wait for your TV in the discovery list, or enter its IP manually.</span>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <span>For <strong>Google TV / Android TV</strong>, enter the pairing code shown on your TV.</span>
+        </li>
+      </ol>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:beamremote.support@gmail.com">beamremote.support@gmail.com</a></p>
-  <p>
-    <a href="privacy.html">Privacy Policy</a> ·
-    <a href="index.html">Home</a>
-  </p>
+      <h2>Supported platforms</h2>
+      <div class="platform-grid">
+        <div class="platform-card">
+          <h3>Roku / TCL Roku</h3>
+          <p>Remote, keyboard, and app launcher. No pairing code required.</p>
+        </div>
+        <div class="platform-card">
+          <h3>Google TV / Android TV</h3>
+          <p>Pairing, remote, app shortcuts, and keyboard when a TV text field is focused.</p>
+        </div>
+        <div class="platform-card">
+          <h3>Samsung Smart TV</h3>
+          <p>Pairing and remote. Feature set varies by model and firmware.</p>
+        </div>
+        <div class="platform-card">
+          <h3>LG webOS</h3>
+          <p>Pairing and remote. Feature set varies by model and firmware.</p>
+        </div>
+      </div>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>Confirm TV and phone are on the same Wi‑Fi (disable VPN while testing).</li>
+        <li>iOS Settings → Beam Remote → enable <strong>Local Network</strong>.</li>
+        <li>Use <strong>Reconnect</strong> on the remote screen or <strong>Forget TV</strong> in Settings, then pair again.</li>
+        <li><strong>Google TV:</strong> pairing uses port 6467; remote control uses port 6466. Both must be reachable on your LAN.</li>
+        <li><strong>Keyboard:</strong> focus a search or text field on the TV, dismiss the on-screen keyboard on the TV, then send text from the app.</li>
+        <li><strong>Apps tab:</strong> tap a shortcut to open Netflix, YouTube, etc. on Google TV (app must be installed on the TV).</li>
+      </ul>
+
+      <h2>App Store listing</h2>
+      <p>
+        The app may appear as <strong>Beam Premium Remote</strong> on the App Store.
+        The name on your home screen is <strong>Beam Remote</strong>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Email us at <a href="mailto:beamremote.support@gmail.com">beamremote.support@gmail.com</a> and include your TV brand, iOS version, and a short description of the issue.
+      </p>
+
+      <div class="link-grid" style="margin-top:1.5rem;">
+        <a class="link-tile" href="privacy.html" style="background:var(--surface-strong);">
+          <span class="tile-icon" aria-hidden="true">🛡</span>
+          <span class="tile-body">
+            <h3>Privacy Policy</h3>
+            <p>How we handle your data on-device.</p>
+          </span>
+          <span class="chevron" aria-hidden="true">›</span>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:beamremote.support@gmail.com">Contact</a>
+    </div>
+    <p>© Beam Remote · com.beamremote.app</p>
+  </footer>
 </body>
 </html>
